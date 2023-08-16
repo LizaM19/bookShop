@@ -30,7 +30,6 @@
     "vite": "^4.4.5",
     "husky": "^8.0.0"
   },
-
   "husky": {
     "hooks": {
       "pre-commit": "npx npx prettier . --write",
