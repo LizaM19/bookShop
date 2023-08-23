@@ -6,7 +6,7 @@ export default function Home() {
 
   useState(() => {
     fetch(
-      "https://www.googleapis.com/books/v1/volumes?q=search+terms&langRestrict=ru",
+      "https://www.googleapis.com/books/v1/volumes?q=search+terms&langRestrict=ru&maxResults=40",
     )
       .then((res) => res.json())
       .then((json) => setBooks(json["items"]));

@@ -1,9 +1,10 @@
 function Book({ book: { id, volumeInfo } }) {
+
   return (
     <div className="bookItem" key={id}>
-      <h4>{volumeInfo.title}</h4>
+      <h5>{volumeInfo.title}</h5>
       <div>{volumeInfo.authors}</div>
-      <img src={volumeInfo.imageLinks.smallThumbnail} width={60} />
+      <img src={volumeInfo.imageLinks.smallThumbnail} />
     </div>
   );
 }

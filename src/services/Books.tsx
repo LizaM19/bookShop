@@ -4,13 +4,6 @@ export default function Books({ books }) {
   return (
     <div>
       <table>
-        <thead>
-          {/*<tr>*/}
-          {/*  <th>Название книги</th>*/}
-          {/*  <th>Автор</th>*/}
-          {/*  <th>Обложка</th>*/}
-          {/*</tr>*/}
-        </thead>
         <tbody>
           <div className={"bookList"}>
             {books?.length ? (

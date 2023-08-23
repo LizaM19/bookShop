@@ -68,23 +68,29 @@ button:focus-visible {
   }
 
   .bookItem {
-    width: 80%;
+
     border: 1px solid #333;
-    padding: 5%;
+    padding: 10%;
+    text-align: justify;
   }
 
   .bookList {
-    padding: 5%;
+    padding: 2%;
   }
 
   .bookList__list {
-    padding: 5%;
+    padding: 2%;
     display: grid;
-    grid-template-columns: repeat(4, 20%);
-    gap: 5%;
+    grid-template-columns: repeat(5, 18%);
+    gap: 2%;
   }
 
   .bookList__empty {
     text-align: center;
   }
+
+  .headerFilter {
+   padding-left: 70%;
+  }
+
 }
