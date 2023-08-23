@@ -66,4 +66,25 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+
+  .bookItem {
+    width: 80%;
+    border: 1px solid #333;
+    padding: 5%;
+  }
+
+  .bookList {
+    padding: 5%;
+  }
+
+  .bookList__list {
+    padding: 5%;
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    gap: 5%;
+  }
+
+  .bookList__empty {
+    text-align: center;
+  }
 }

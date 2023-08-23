@@ -1,15 +1,10 @@
 function Book({ book: { id, volumeInfo } }) {
   return (
-    <tr key={id}>
-      <td>{volumeInfo.title}</td>
-      <td>{volumeInfo.authors}</td>
-      <td>
+      <div className="bookItem" key={id}>
+          <h4>{volumeInfo.title}</h4>
+          <div>{volumeInfo.authors}</div>
           <img src={volumeInfo.imageLinks.smallThumbnail} width={60} />
-      </td>
-      <td>
-        <button>Edit</button>
-      </td>
-    </tr>
+      </div>
   );
 }
 export default Book;

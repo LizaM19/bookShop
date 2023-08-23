@@ -5,16 +5,25 @@ export default function Books({ books }) {
     <div>
       <table>
         <thead>
-          <tr>
-            <th>Название книги</th>
-            <th>Автор</th>
-            <th>Обложка</th>
-          </tr>
+          {/*<tr>*/}
+          {/*  <th>Название книги</th>*/}
+          {/*  <th>Автор</th>*/}
+          {/*  <th>Обложка</th>*/}
+          {/*</tr>*/}
+
         </thead>
         <tbody>
-          {books.map((book) => (
-            <Book key={book.id} book={book} />
-          ))}
+        <div className={"bookList"}>
+          {books?.length
+              ?
+              <ul className={"bookList__list"}>
+                {books?.map(book =>
+                    <Book book={book} key={book.id}/>
+                )}
+              </ul>
+              : <h2 className={"bookList__empty"}>There are no books find =(</h2>
+          }
+        </div>
         </tbody>
       </table>
     </div>
