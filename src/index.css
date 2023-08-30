@@ -68,7 +68,6 @@ button:focus-visible {
   }
 
   .bookItem {
-
     border: 1px solid #333;
     padding: 10%;
     text-align: justify;
@@ -90,7 +89,28 @@ button:focus-visible {
   }
 
   .headerFilter {
-   padding-left: 70%;
+    position: fixed;
+    padding-left: 70%;
   }
 
+  .footer {
+    font-family: sans-serif;
+    min-height: 100vh;
+  }
+
+  footer {
+    position: fixed;
+    background-color: gray;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 8px;
+    text-align: center;
+  }
+
+  .pagination {
+    color: #1a1a1a;
+    margin-bottom: 5%;
+    margin-left: 50%;
+  }
 }

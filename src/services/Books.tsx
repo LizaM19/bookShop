@@ -11,7 +11,7 @@ export default function Books({ books }) {
                 {books?.map((book) => <Book book={book} key={book.id} />)}
               </ul>
             ) : (
-              <h2 className={"bookList__empty"}>There are no books find =(</h2>
+              <h2 className={"bookList__empty"}>There are no books find =(</h2> //TODO: Добавить анимацию загрузки
             )}
           </div>
         </tbody>
